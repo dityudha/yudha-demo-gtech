@@ -1,0 +1,136 @@
+{
+	"info": {
+		"_postman_id": "bde9c641-5603-4422-b1f8-862c9830f79b",
+		"name": "Gtech testing API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "create member",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"firstName\":\"Supri\",\r\n\"lastName\":\"Doe\",\r\n\"gender\":\"Male\",\r\n\"dob\":\"12/04/1995\",\r\n\"mobile_phone\":\"085647892563\",\r\n\"email\":\"Supri@gmail.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/member/create-member",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"member",
+						"create-member"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update member",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"firstName\":\"Mamat\",\r\n\"lastName\":\"Juha\",\r\n\"gender\":\"Male\",\r\n\"dob\":\"12/04/1995\",\r\n\"mobile_phone\":\"085647892563\",\r\n\"email\":\"Mamat@gmail.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/member/update-member/4",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"member",
+						"update-member",
+						"4"
+					]
+				},
+				"description": "Update member by ID"
+			},
+			"response": []
+		},
+		{
+			"name": "get all member",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/member/get-all-member",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"member",
+						"get-all-member"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get member by ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/member/get-member/4",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"member",
+						"get-member",
+						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete member by ID",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/member/delete-member/5",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"member",
+						"delete-member",
+						"5"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
