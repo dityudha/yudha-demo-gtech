@@ -10,7 +10,7 @@ For testing API using postman <br />
 import file to postman, filename : Gtech testing API.postman_collection.json
 
 # Project Structure
-
+![ice_screenshot_20210406-211844](https://user-images.githubusercontent.com/33762836/113729411-342cd380-9721-11eb-803f-8b745a26e897.png)
 
 # Running with STS
 
